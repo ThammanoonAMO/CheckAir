@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Text, View, StyleSheet } from "react-native";
 
-export default class Home extends Component {
+export default class Help extends Component {
   render() {
     return (
       <View style={styles.MainContainer}>
-        <Text style={{ fontSize: 23 }}> Screen 1 </Text>
+        <Text style={{ fontSize: 23 }}> Screen 3 </Text>
       </View>
     );
   }

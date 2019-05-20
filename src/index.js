@@ -1,17 +1,12 @@
 import React, { Component } from "react";
 import { Text, View, StyleSheet, AppRegistry } from "react-native";
-import { createAppContainer } from "react-navigation";
-import AppNavigator from "./lib/router";
-import Drawer from "./lib/router";
-
-const AppIndex = createAppContainer(Drawer);
-AppRegistry.registerComponent("RNNavigators", () => Drawer);
+import App1 from "./lib/router";
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <AppIndex />
+        <App1 />
       </View>
     );
   }

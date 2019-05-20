@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import { Text, View, StyleSheet } from "react-native";
 
-export default class Home extends Component {
+export default class Setting extends Component {
   render() {
     return (
       <View style={styles.MainContainer}>
-        <Text style={{ fontSize: 23 }}> Screen 1 </Text>
+        <Text style={{ fontSize: 23 }}> Screen 5 </Text>
       </View>
     );
   }
 }
-
 const styles = StyleSheet.create({
   MainContainer: {
     flex: 1,
