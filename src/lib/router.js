@@ -12,6 +12,8 @@ import Help from "../page/home/help";
 import About from "../page/home/about";
 import Setting from "../page/home/setting";
 import ShowAQI from "../page/home/showAQI";
+import Send from "../page/home/sendFeedback";
+import Report from "../page/home/reportProblem";
 
 class NavigationDrawerStructure extends Component {
   toggleDrawer = () => {
@@ -109,6 +111,32 @@ const ShowAQI_Hidden = createStackNavigator({
     })
   }
 });
+const Send_Hidden = createStackNavigator({
+  sixth: {
+    screen: Send,
+    navigationOptions: ({ navigation }) => ({
+      title: "Feedback",
+      headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+      headerStyle: {
+        backgroundColor: "#FF9800"
+      },
+      headerTintColor: "#fff"
+    })
+  }
+});
+const Report_Hidden = createStackNavigator({
+  sixth: {
+    screen: Report,
+    navigationOptions: ({ navigation }) => ({
+      title: "Report",
+      headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+      headerStyle: {
+        backgroundColor: "#FF9800"
+      },
+      headerTintColor: "#fff"
+    })
+  }
+});
 
 class Hidden extends React.Component {
   render() {
@@ -149,6 +177,18 @@ const DrawerNavigatorExample = createDrawerNavigator({
   },
   ShowAQI: {
     screen: ShowAQI_Hidden,
+    navigationOptions: {
+      drawerLabel: <Hidden />
+    }
+  },
+  Send: {
+    screen: Send_Hidden,
+    navigationOptions: {
+      drawerLabel: <Hidden />
+    }
+  },
+  Report: {
+    screen: Report_Hidden,
     navigationOptions: {
       drawerLabel: <Hidden />
     }
