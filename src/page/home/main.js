@@ -20,9 +20,11 @@ export default class Home extends Component {
     this.state = { isLoading: true };
     this.state = {
       text: "",
-      searchTerm: ""
+      searchTerm: "",
+      newName: ""
     };
   }
+
   componentDidMount() {
     return fetch("http://localhost:5000/api/data/data")
       .then(response => response.json())
@@ -47,6 +49,11 @@ export default class Home extends Component {
       this.setState({ text: text });
     }
   };
+
+  onNewName(txt) {
+    this.setState({ newName: txt });
+  }
+
   render() {
     const filteredLocations = locations.filter(
       createFilter(this.state.searchTerm, KEYS_TO_FILTERS)
@@ -84,13 +91,14 @@ export default class Home extends Component {
           }}
           style={styles.searchInput}
           placeholder="พิมชื่อสถานที่ (อำเภอ หรือจังหวัด)..."
+          value={this.state.newName}
         />
         <View style={styles.ItemScroll}>
           <ScrollView>
             {filteredLocations.map(location => {
               return (
                 <TouchableOpacity
-                  onPress={this.onChangeText}
+                  onPress={() => this.onNewName(location.user.name)}
                   key={location.id}
                   style={styles.locationItem}
                 >

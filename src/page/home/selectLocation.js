@@ -1,5 +1,12 @@
 import React, { Component } from "react";
-import { Text, View, Button, StyleSheet, FlatList } from "react-native";
+import {
+  Text,
+  View,
+  Button,
+  StyleSheet,
+  FlatList,
+  ScrollView
+} from "react-native";
 
 export default class Location extends Component {
   constructor(props) {
@@ -27,22 +34,24 @@ export default class Location extends Component {
     return (
       <View style={styles.MainContainer}>
         <Text style={{ fontSize: 23 }}> Screen 2 </Text>
-        <FlatList
-          data={this.state.dataSource}
-          renderItem={({ item }) => (
-            <Button
-              title={item.name}
-              onPress={() => {
-                this.props.navigation.navigate("ShowAQI", {
-                  name: item.name,
-                  AQI: item.AQI,
-                  subject: item.subject
-                });
-              }}
-            />
-          )}
-          keyExtractor={({ id }, index) => id}
-        />
+        <ScrollView>
+          <FlatList
+            data={this.state.dataSource}
+            renderItem={({ item }) => (
+              <Button
+                title={item.name}
+                onPress={() => {
+                  this.props.navigation.navigate("ShowAQI", {
+                    name: item.name,
+                    AQI: item.AQI,
+                    subject: item.subject
+                  });
+                }}
+              />
+            )}
+            keyExtractor={({ id }, index) => id}
+          />
+        </ScrollView>
       </View>
     );
   }
