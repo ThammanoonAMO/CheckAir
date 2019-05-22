@@ -3,7 +3,7 @@ const router = express.Router();
 
 //Load Data Model
 const Data = require("../../models/data");
-console.log(Data);
+const Current = require("../../models/current");
 
 router.get("/", (req, res) =>
   res.json({
@@ -19,6 +19,17 @@ router.post("/data", (req, res) => {
     name: req.body.name
   });
   dataAQI
+    .save()
+    .then(data => res.json(data))
+    .catch(err => console.log(err));
+});
+
+router.post("/current", (req, res) => {
+  var dataCurrent = new Current({
+    name: req.body.name,
+    AQI: req.body.AQI
+  });
+  dataCurrent
     .save()
     .then(data => res.json(data))
     .catch(err => console.log(err));

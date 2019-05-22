@@ -35,7 +35,7 @@ const MainScreen_StackNavigator = createStackNavigator({
       title: "Check Air",
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
       headerStyle: {
-        backgroundColor: "#FF9800"
+        backgroundColor: "#001121"
       },
       headerTintColor: "#fff"
     })
@@ -49,7 +49,7 @@ const Location_StackNavigator = createStackNavigator({
       title: "Select Location",
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
       headerStyle: {
-        backgroundColor: "#FF9800"
+        backgroundColor: "#001121"
       },
       headerTintColor: "#fff"
     })
@@ -63,7 +63,7 @@ const Help_StackNavigator = createStackNavigator({
       title: "Help",
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
       headerStyle: {
-        backgroundColor: "#FF9800"
+        backgroundColor: "#001121"
       },
       headerTintColor: "#fff"
     })
@@ -77,7 +77,7 @@ const About_StackNavigator = createStackNavigator({
       title: "About",
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
       headerStyle: {
-        backgroundColor: "#FF9800"
+        backgroundColor: "#001121"
       },
       headerTintColor: "#fff"
     })
@@ -91,7 +91,7 @@ const Setting_StackNavigator = createStackNavigator({
       title: "Setting",
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
       headerStyle: {
-        backgroundColor: "#FF9800"
+        backgroundColor: "#001121"
       },
       headerTintColor: "#fff"
     })
@@ -105,7 +105,7 @@ const ShowAQI_Hidden = createStackNavigator({
       title: "Check Air",
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
       headerStyle: {
-        backgroundColor: "#FF9800"
+        backgroundColor: "#001121"
       },
       headerTintColor: "#fff"
     })
@@ -118,7 +118,7 @@ const Send_Hidden = createStackNavigator({
       title: "Feedback",
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
       headerStyle: {
-        backgroundColor: "#FF9800"
+        backgroundColor: "#001121"
       },
       headerTintColor: "#fff"
     })
@@ -131,7 +131,7 @@ const Report_Hidden = createStackNavigator({
       title: "Report",
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
       headerStyle: {
-        backgroundColor: "#FF9800"
+        backgroundColor: "#001121"
       },
       headerTintColor: "#fff"
     })

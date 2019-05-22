@@ -21,7 +21,8 @@ export default class Home extends Component {
     this.state = {
       text: "",
       searchTerm: "",
-      newName: ""
+      newName: "",
+      AQIInput: ""
     };
   }
 
