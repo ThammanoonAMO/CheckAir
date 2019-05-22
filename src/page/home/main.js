@@ -7,7 +7,8 @@ import {
   TouchableOpacity,
   Image,
   TextInput,
-  ScrollView
+  ScrollView,
+  Alert
 } from "react-native";
 import SearchInput, { createFilter } from "react-native-search-filter";
 import locations from "../../../locations";
@@ -54,6 +55,21 @@ export default class Home extends Component {
   onNewName(txt) {
     this.setState({ newName: txt });
   }
+
+  InsertAQIToServer = () => {
+    fetch("http://localhost:5000/api/data/current", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        name: this.state.newName,
+        AQI: this.state.text
+      })
+    });
+    Alert.alert("You tapped the button!");
+  };
 
   render() {
     const filteredLocations = locations.filter(
@@ -117,8 +133,9 @@ export default class Home extends Component {
           </ScrollView>
         </View>
         <View style={styles.BottomButton}>
-          <TouchableOpacity onPress={this.onPress}>
+          <TouchableOpacity onPress={this.InsertAQIToServer}>
             <Image
+              title="This looks great!"
               source={require("./imgs/checkIt.png")}
               style={styles.ButtonIconStyle}
             />

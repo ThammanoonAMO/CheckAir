@@ -44,6 +44,15 @@ router.get("/data", (req, res) => {
   });
 });
 
+router.get("/current", (req, res) => {
+  Current.find(function(err, dataCurrent) {
+    if (err) {
+      res.send(err);
+    }
+    res.json(dataCurrent);
+  });
+});
+
 router.get("/data/:id", (req, res) => {
   Data.findOne({ _id: req.params.id }, (err, Data) => {
     if (err) {
