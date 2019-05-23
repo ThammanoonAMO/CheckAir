@@ -1,99 +1,130 @@
-export default [{
-  id: 1,
-  user: {
-    name: 'สายไหม',
+export default [
+  {
+    id: 1,
+    user: {
+      name: "สายไหม"
+    },
+    subject: "กรุงเทพมหานคร",
+    AQI: "72"
   },
-  subject: 'กรุงเทพมหานคร',
-}, {
-  id: 2,
-  user: {
-    name: 'ฆ้องชัย'
+  {
+    id: 2,
+    user: {
+      name: "ฆ้องชัย"
+    },
+    subject: "กาฬสินธุ์",
+    AQI: "53"
   },
-  subject: 'กาฬสินธุ์',
-}, {
-  id: 3,
-  user: {
-    name: 'บ้านนา'
+  {
+    id: 3,
+    user: {
+      name: "บ้านนา"
+    },
+    subject: "นครนายก",
+    AQI: "27"
   },
-  subject: "นครนายก",
-}
-  , {
-  id: 4,
-  user: {
-    name: 'ปากพลี'
+  {
+    id: 4,
+    user: {
+      name: "ปากพลี"
+    },
+    subject: "นครนายก",
+    AQI: "35"
   },
-  subject: 'นครนายก',
-}, {
-  id: 5,
-  user: {
-    name: 'เมืองนครนายก'
+  {
+    id: 5,
+    user: {
+      name: "เมืองนครนายก"
+    },
+    subject: "นครนายก",
+    AQI: "34"
   },
-  subject: 'นครนายก',
-}, {
-  id: 6,
-  user: {
-    name: 'องครักษ์'
+  {
+    id: 6,
+    user: {
+      name: "องครักษ์"
+    },
+    subject: "นครนายก",
+    AQI: "81"
   },
-  subject: 'นครนายก',
-}, {
-  id: 7,
-  user: {
-    name: 'คลองหลวง'
+  {
+    id: 7,
+    user: {
+      name: "คลองหลวง"
+    },
+    subject: "ปทุมธานี",
+    AQI: "110"
   },
-  subject: 'ปทุมธานี',
-}, {
-  id: 8,
-  user: {
-    name: 'เมืองปทุมธานี'
+  {
+    id: 8,
+    user: {
+      name: "เมืองปทุมธานี"
+    },
+    subject: "ปทุมธานี",
+    AQI: "112"
   },
-  subject: 'ปทุมธานี',
-}, {
-  id: 9,
-  user: {
-    name: 'สามโคก',
+  {
+    id: 9,
+    user: {
+      name: "สามโคก"
+    },
+    subject: "ปทุมธานี",
+    AQI: "111"
   },
-  subject: 'ปทุมธานี',
-}, {
-  id: 10,
-  user: {
-    name: 'ธัญบุรี'
+  {
+    id: 10,
+    user: {
+      name: "ธัญบุรี"
+    },
+    subject: "ปทุมธานี",
+    AQI: "110"
   },
-  subject: 'ปทุมธานี',
-}, {
-  id: 11,
-  user: {
-    name: 'ลาดหลุมแก้ว'
+  {
+    id: 11,
+    user: {
+      name: "ลาดหลุมแก้ว"
+    },
+    subject: "ปทุมธานี",
+    AQI: "110"
   },
-  subject: "ปทุมธานี",
-}
-  , {
-  id: 12,
-  user: {
-    name: 'ลำลูกกา'
+  {
+    id: 12,
+    user: {
+      name: "ลำลูกกา"
+    },
+    subject: "ปทุมธานี",
+    AQI: "102"
   },
-  subject: 'ปทุมธานี',
-}, {
-  id: 13,
-  user: {
-    name: 'หนองเสือ'
+  {
+    id: 13,
+    user: {
+      name: "หนองเสือ"
+    },
+    subject: "ปทุมธานี",
+    AQI: "98"
   },
-  subject: 'ปทุมธานี',
-}, {
-  id: 14,
-  user: {
-    name: 'กะทู้'
+  {
+    id: 14,
+    user: {
+      name: "กะทู้"
+    },
+    subject: "ภูเก็ต",
+    AQI: "19"
   },
-  subject: 'ภูเก็ต',
-}, {
-  id: 15,
-  user: {
-    name: 'ถลาง'
+  {
+    id: 15,
+    user: {
+      name: "ถลาง"
+    },
+    subject: "ภูเก็ต",
+    AQI: "11"
   },
-  subject: 'ภูเก็ต',
-}, {
-  id: 16,
-  user: {
-    name: 'เมืองภูเก็ต'
-  },
-  subject: 'ภูเก็ต',
-}]
+  {
+    id: 16,
+    user: {
+      name: "เมืองภูเก็ต"
+    },
+    subject: "ภูเก็ต",
+    AQI: "17"
+  }
+];
